@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+// Шрифты
+$titleFont: "EB Garamond", sans-serif;
+$mainFont: "Roboto", Arial, sans-serif;
+
+// Палитра цветов
+$firstColor: #100992;
+$secondColor: rgb(103, 0, 199);
+$titleColor: #2f0e76;
+$subtitleColor: #323232;
+
+// Градиенты
+$buttonGradient: linear-gradient(142deg, rgba(60,52,202,0.3) 0%, rgba(72,1,179,0.3) 43%, rgba(102,3,144,0.3) 73%);
+$backgroundStartGradient: linear-gradient(180deg, rgba(71,0,152,1) 0%, rgba(72,1,179,1) 45%, rgba(83,0,198,1) 73%);
+
+
+
