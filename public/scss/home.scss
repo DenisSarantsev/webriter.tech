@@ -13,7 +13,7 @@
 	background: radial-gradient(circle, rgba(0, 81, 255, 0.15) 18%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
 	animation: firstBgGradient ease 15s infinite;
 	@media (max-width: 800px){
-		display: none;
+
 	}
 }
 .background-gradient-two {
@@ -26,7 +26,7 @@
 	background: radial-gradient(circle, rgba(0, 42, 255, 0.1) 18%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
 	animation: firstBgGradientTwo ease 25s infinite;
 	@media (max-width: 800px){
-		top: -70%;
+		top: -10%;
 		right: -10%;
 	}
 }
@@ -40,7 +40,7 @@
 	background: radial-gradient(circle, rgba(242, 0, 255, 0.3) 3%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
 	animation: firstBgGradientThree ease 45s infinite;
 	@media (max-width: 800px){
-		display: none;
+	
 	}
 }
 
@@ -107,8 +107,8 @@
 		}
 	}
 	&__item {
+
 		font-size: 20px;
-		font-family: Arial, Helvetica, sans-serif;
 		@media (max-width: 1100px){
 			font-size: 18px;
 		}
