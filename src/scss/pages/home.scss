@@ -47,6 +47,53 @@
 	}
 	&__right-block {
 	}
+
+	&__burger-buttons-wrapper {
+		height: 26px;
+		width: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 5px;
+	}
+	&__burger-button {
+		@media (min-width: 1000px){
+			display: none;
+			z-index: 2000;
+		}
+		& img {
+			width: 26px;
+			filter: invert(13%) sepia(25%) saturate(7486%) hue-rotate(250deg) brightness(89%) contrast(114%);
+		}
+	}
+	&__burger-button-image {
+	}
+	&__close-burger-button {
+		z-index: 2000;
+		@media (min-width: 1000px){
+			display: none;
+		}
+		& img {
+			width: 20px;
+			filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(31deg) brightness(101%) contrast(101%);
+		}
+	}
+	&__close-burger-button-image {
+	}
+}
+
+.open-burger {
+	@media (max-width: 768px){
+		transition: all 0.3s ease 0s;
+		left: 0px;
+	}
+}
+
+.close-burger {
+	@media (max-width: 768px){
+		transition: all 0.3s ease 0s;
+		left: -1000px;
+	}
 }
 
 .navigation {
@@ -55,7 +102,12 @@
 	display: flex;
 	justify-content: center;
 	@media (max-width: 1000px){
-		display: none;
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background-color: #4c058e;
+		z-index: 100;
 	}
 	&__list {
 		height: 100%;
@@ -67,12 +119,20 @@
 		@media (max-width: 1100px){
 			gap: 20px;
 		}
+		@media (max-width: 1000px){
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+		}
 	}
 	&__item {
-
 		font-size: 20px;
 		@media (max-width: 1100px){
 			font-size: 18px;
+		}
+		@media (max-width: 1000px){
+			font-size: 25px;
+			color: #FFFFFF;
 		}
 		&:hover {
 			color: $firstColor;
@@ -84,12 +144,16 @@
 
 .side-block {
 	display: flex;
+	align-items: center;
 	gap: 25px;
-	@media (max-width: 600px){
-		display: none;
+	@media (max-width: 768px){
+		gap: 15px;
 	}
 	&__search {
 		display: flex;
+		@media (max-width: 600px){
+			display: none;
+		}
 	}
 	&__language {
 		display: flex;
@@ -120,6 +184,9 @@
 	display: flex;
 	gap: 15px;
 	color: #6b6b6b;
+	@media (max-width: 768px){
+		gap: 10px;
+	}
 	&__item {
 		&:hover {
 			cursor: pointer;
@@ -143,7 +210,7 @@
 	align-items: center;
 	position: relative;
 	@media (max-width: 768px){
-		height: 100vh;
+		height: 90svh; // Прокручиваем вверх на половину от высоты шапки
 	}
 	&__container {
 		padding: 0px 15px 0px 15px;

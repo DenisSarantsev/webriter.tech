@@ -1,5 +1,9 @@
 @import "./includes.scss";
 
+._hidden {
+	display: none;
+}
+
 // Стили для контейнера с иконкой ( без цвета )
 .icon-style {
 	padding: 10px;
