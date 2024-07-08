@@ -1,3 +1,5 @@
+@import "./includes.scss";
+
 // Стили для контейнера с иконкой ( без цвета )
 .icon-style {
 	padding: 10px;
@@ -29,11 +31,11 @@
 	line-height: 120%;
 	color: #000;
 	@media (max-width: 1100px){
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 130%;
 	}
 	@media (max-width: 768px){
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 120%;
 		max-width: 100%;
 	}
@@ -139,4 +141,63 @@
 
 .container-padding {
 	padding: 0px 15px;
+}
+
+// Стили фоновых градиентов
+.background-gradients {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	overflow: hidden;
+	@media (max-width: 768px){
+		height: 150%;
+	}
+}
+.background-gradient {
+	position: relative;
+	top: -60%;
+	left: -50%;
+	height: 150%;
+	width: 120%;
+	z-index: -1;
+	background: radial-gradient(circle, rgba(0, 81, 255, 0.15) 18%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
+	animation: firstBgGradient ease 15s infinite;
+	@media (max-width: 768px){
+		background: radial-gradient(circle, rgba(0, 81, 255, 0.10) 18%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
+		width: 150%;
+		left: 0%;
+	}
+}
+.background-gradient-two {
+	position: absolute;
+	top: -70%;
+	right: -60%;
+	height: 150%;
+	width: 100%;
+	z-index: -1;
+	background: radial-gradient(circle, rgba(0, 42, 255, 0.1) 18%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
+	animation: firstBgGradientTwo ease 25s infinite;
+	@media (max-width: 768px){
+		background: radial-gradient(circle, rgba(0, 42, 255, 0.05) 18%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
+		width: 150%;
+		right: 0%;
+	}
+}
+.background-gradient-three {
+	position: absolute;
+	top: -10%;
+	right: -10%;
+	height: 150%;
+	width: 100%;
+	z-index: -1;
+	background: radial-gradient(circle, rgba(242, 0, 255, 0.3) 3%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
+	animation: firstBgGradientThree ease 45s infinite;
+	@media (max-width: 768px){
+		background: radial-gradient(circle, rgba(242, 0, 255, 0.15) 3%, rgba(89,0,255,0) 53%, rgba(0,86,255,0) 81%);
+		width: 120%;
+		top: -70%;
+	}
 }

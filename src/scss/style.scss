@@ -1,0 +1,28 @@
+@import url("./pages/home.scss");
+@import url("./pages/hints.scss");
+@import url("./pages/resources.scss");
+@import url("./pages/tutorials.scss");
+@import url("./pages/solutions.scss");
+@import url("./nullstyle.scss");
+@import url("./common.scss");
+@import url("./animations.scss");
+
+body {
+	height: 100%;
+	max-width: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	color: #323232;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main {
+	height: 100%;
+	overflow-x: hidden;
+}

@@ -12,6 +12,11 @@ input[type="submit"] {
     appearance: none;     /* Убирает стили браузера */
     -webkit-appearance: none; /* Убирает стили браузера для WebKit */
     -moz-appearance: none;    /* Убирает стили браузера для Mozilla */
+		user-select: none; /* Standard syntax */
+		-webkit-user-select: none; /* Safari */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		-webkit-tap-highlight-color: transparent; /* Disable the highlight on tap */
 }
 
 button:focus,
@@ -83,4 +88,12 @@ ul {
 li {
 	margin: 0;             /* Убирает внешние отступы элементов списка */
 	padding: 0;            /* Убирает внутренние отступы элементов списка */
+}
+
+/* Disable text selection */
+button {
+	user-select: none; /* Standard syntax */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 }
